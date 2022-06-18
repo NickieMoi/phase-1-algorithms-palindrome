@@ -1,6 +1,17 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  //iterate and compare letters
+  for (let startIndex = 0; startIndex < word.length / 2; startIndex++) {
+    const endIndex = word.length - 1 - startIndex;
+    if (word[startIndex] !== word[endIndex]) {
+      //if letters dont match
+      return false
+    }
+  }
+  //if letters match
+  return true;
 }
+
 
 /* 
   Add your pseudocode here
